@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>People, Places and Things</title>  
-        <!-- add in bootstrap CDN-->  
+        <title>A Game of Guessing Movies</title>  
+        <!-- add in bootstrap CDN--> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
         <div class="container">
             <h1>A Game of Guessing Movies</h1>
+            <!-- <button onclick="myFunction()">Try it</button>
+
+            <div id="showCount"></div>
+<input type="button" id="btnClick" value="Click me" onclick="CountFun();"> -->
+
+            <img src="https://media.giphy.com/media/htwCdoNI2jyoFX2x2B/source.gif" width="300" height="300" />
+            <div class="spacer"></div>
+            <p>Pick a Question</p>
+            <form class="row d-flex justify-content-center">
+                <input class="btn btn-primary" type="button" id="buttonOne" onclick="changeImage1()" value="Question 1">
+                <input class="btn btn-primary" type="button" id="buttonTwo" onclick="changeImage2()" value="Question 2">
+                <input class="btn btn-primary" type="button" id="buttonThree" onclick="changeImage3()" value="Question 3">
+                <input class="btn btn-primary" type="button" id="buttonFour" onclick="changeImage4()" value="Question 4">
+                <input class="btn btn-primary" type="button" id="buttonFive" onclick="changeImage5()" value="Question 5">
+                <input class="btn btn-primary" type="button" id="buttonSix" onclick="changeImage6()" value="Question 6">
+            </form>
+            <form class="row d-flex justify-content-center">
+                <input class="btn btn-primary" type="button" id="buttonSeven" onclick="changeImage7()" value="Question 7">
+                <input class="btn btn-primary" type="button" id="buttonEight" onclick="changeImage8()" value="Question 8">
+                <input class="btn btn-primary" type="button" id="buttonNine" onclick="changeImage9()" value="Question 9">
+                <input class="btn btn-primary" type="button" id="buttonTen" onclick="changeImage10()" value="Question 10">
+                <input class="btn btn-primary" type="button" id="buttonEleven" onclick="changeImage11()" value="Question 11">
+                <input class="btn btn-primary" type="button" id="buttonTwelve" onclick="changeImage12()" value="Question 12">
+            </form>
+            <!-- <div><button id="button1">Answer Now</button></div> -->
+            <div class="answer-space">Your Answer is: <div id="speech-div"></div></div>
+            <div class="answer-space">Correct Answer is: <div id="correct"></div></div>
         </div>
 
-        <img src="https://media.giphy.com/media/htwCdoNI2jyoFX2x2B/source.gif" width="300" height="300" />
-        <p>Pick a Question</p>
-        <form>
-            <input type="button" id="buttonOne" onclick="changeImage1()" value="Question 1">
-            <input type="button" id="buttonTwo" onclick="changeImage2()" value="Question 2">
-            <input type="button" id="buttonThree" onclick="changeImage3()" value="Question 3">
-            <input type="button" id="buttonFour" onclick="changeImage4()" value="Question 4">
-            <input type="button" id="buttonFive" onclick="changeImage5()" value="Question 5">
-        </form>
-        <!-- <div><button id="button1">Answer Now</button></div> -->
-        <div class="answer-space">Your Answer is: <div id="speech-div"></div></div>
         <!-- <script src="script.js"></script> -->
         <script src="animation.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

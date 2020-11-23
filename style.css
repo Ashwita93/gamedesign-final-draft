@@ -5,7 +5,24 @@ body{
 .answer-space{
     padding:10px;
 }
+.container{
+    margin-top:5%;
+}
 input{
     padding:10px 20px;
     font-size: 16px;
+}
+.row{
+    text-align: center;
+}
+.spacer{
+    padding:30px;
+}
+input{
+    margin:5px;
+    border-radius: 5px;
+}
+.btn:focus{
+    background-color:#e8e8e8;
+    color:#839b97;
 }
